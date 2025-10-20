@@ -1,0 +1,2 @@
+Accuracy: 0.9704
+F1 (macro): 0.9703
