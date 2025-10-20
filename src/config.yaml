@@ -1,0 +1,33 @@
+base_model_config:
+  base_model: mbert-uncased
+  apply_lora_flag: True
+  freeze_transformer_flag: False
+  num_unique_labels: 20
+  
+training_config:
+  # directory
+  output_dir: ../model_checkpoints/lora
+  logging_dir: ../logs/lora
+
+  # LoRA config
+  lora_rank: 8
+  lora_alpha: 16
+  target_modules: ["query", "key", "value"]
+  lora_dropout: 0.1
+
+  # training config
+  learning_rate: 0.00005
+  eval_steps: 500
+  save_steps: 500
+  logging_steps: 100
+  per_device_train_batch_size: 32
+  per_device_eval_batch_size: 32
+  num_train_epochs: 20
+  weight_decay: 0.01
+  early_stopping_patience: 5
+  early_stopping_threshold: 0.01
+
+inference_config:
+  # directory
+  model_path: ../model_checkpoints/lora
+  saving_dir: ../results/lora/test_split.csv

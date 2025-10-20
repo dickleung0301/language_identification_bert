@@ -1,0 +1,11 @@
+PyYAML
+datasets
+transformers
+torch
+numpy
+pandas
+evaluate
+dotenv
+huggingface_hub
+peft
+gradio

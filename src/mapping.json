@@ -1,0 +1,52 @@
+{
+    "models": {
+        "mbert-cased": "google-bert/bert-base-multilingual-cased",
+        "mbert-uncased": "google-bert/bert-base-multilingual-uncased"
+    },
+
+    "id2label": {
+        "0": "ar",
+        "1": "bg",
+        "2": "de",
+        "3": "el",
+        "4": "en",
+        "5": "es",
+        "6": "fr",
+        "7": "hi",
+        "8": "it",
+        "9": "ja",
+        "10": "nl",
+        "11": "pl",
+        "12": "pt",
+        "13": "ru",
+        "14": "sw",
+        "15": "th",
+        "16": "tr",
+        "17": "ur",
+        "18": "vi",
+        "19": "zh"
+    },
+
+    "language_codes":{
+        "ar": "arabic",
+        "bg": "bulgarian",
+        "de": "german",
+        "el": "modern greek",
+        "en": "english",
+        "es": "spanish",
+        "fr": "french",
+        "hi": "hindi",
+        "it": "italian",
+        "ja": "japanese",
+        "nl": "dutch",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ru": "russian",
+        "sw": "swahili",
+        "th": "thai",
+        "tr": "turkish",
+        "ur": "urdu",
+        "vi": "vietnamese",
+        "zh": "chinese"
+    }
+}
